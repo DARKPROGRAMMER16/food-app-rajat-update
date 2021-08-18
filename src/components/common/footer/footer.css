@@ -1,0 +1,35 @@
+#footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+.footer {
+    background-color: #45b64a;
+    padding: 50px 0 50px 0;
+    /* margin-top: 50px;*/
+}
+#footer a {
+    color: #dedede;
+}
+#footer a:hover {
+    color: #ffffff;
+}
+
+#footer h3 {
+    color: #ffffff;
+    padding-bottom: 1rem;
+}
+
+#footer .linear-links {
+    padding: 20px 0 0 0;
+}
+
+#footer .linear-links a {
+    padding-right: 10px;
+}
+
+
+@media (max-width:414px){
+    #footer{
+        display: none;
+    }
+}

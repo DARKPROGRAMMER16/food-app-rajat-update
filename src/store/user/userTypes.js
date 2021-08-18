@@ -1,0 +1,8 @@
+export const SEND_OTP = "SEND_OTP";
+export const VERIFY_OTP = "VERIFY_OTP";
+export const UPDATE_USER_DETAILS = "UPDATE_USER_DETAILS";
+export const UPDATE_TEACHER_DETAILS = "UPDATE_TEACHER_DETAILS";
+export const LOGIN = "LOGIN";
+export const CREATE_ACCOUNT = "CREATE_ACCOUNT";
+export const LOGOUT = "LOGOUT";
+export const LOGIN_WITH_PASSWORD = "LOGIN_WITH_PASSWORD";

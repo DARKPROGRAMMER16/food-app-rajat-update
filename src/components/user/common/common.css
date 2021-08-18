@@ -1,0 +1,33 @@
+.user-card .card-header {
+    text-align: center;
+    padding: 8px;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #e79f03;
+}
+.user-bg div .card {
+    border: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.line {
+    background-color: #222;
+    height: 1px;
+    margin: auto;
+}
+.or {
+    margin: 10px;
+}
+.user-role > div {
+    padding: 10px;
+    cursor: pointer;
+}
+.user-role > div > div:hover {
+    background: rgba(190, 190, 190, 0.7);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.text-danger {
+    min-height: 15px;
+}

@@ -1,0 +1,37 @@
+.social-login .btn {
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    border: 0;
+    border-radius: 12px;
+    padding: 14px 16px;
+}
+.social-login {
+    background: url(../../../assets/images/login_bg.png);
+    height: 100%;
+    background-size: cover;
+}
+.login {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.login h2 {
+    font-weight: bold;
+}
+.login .btn {
+    background: #ff971c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to top,
+        #ff9d2d,
+        #ff8e0b,
+        #ff8b00
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to top,
+        #ff9d2d,
+        #ff900e,
+        #ff8b00
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

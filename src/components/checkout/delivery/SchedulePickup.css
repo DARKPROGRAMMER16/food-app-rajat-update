@@ -1,0 +1,20 @@
+.schedule-options .form-check {
+    padding: 12px;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+}
+.schedule-options .form-check .form-check-input {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.schedule-dates {
+    text-align: center;
+    display: inline-grid;
+}
+.schedule-dates > div {
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 8px;
+}

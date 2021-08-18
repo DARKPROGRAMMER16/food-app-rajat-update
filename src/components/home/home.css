@@ -1,0 +1,41 @@
+.main-slider {
+    background: url(../../assets/images/Bg.jpg);
+    background-size: cover;
+    padding-bottom: 100px;
+}
+.home-header h1 {
+    color: #1e467f;
+    width: 600px;
+    max-width: 100%;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 60px;
+    z-index: 2;
+    font-weight: bolder;
+}
+.home-header .btn {
+    position: relative;
+    z-index: 2;
+    margin-right: 10px;
+}
+.home-header .btn {
+    padding: 14px 28px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border-radius: 50px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.15);
+}
+.btn-red {
+    background-color: #f23276;
+}
+
+.home-menu-pills button {
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.home-menu-right button {
+    margin-right: 10px;
+    border-radius: 20px;
+}

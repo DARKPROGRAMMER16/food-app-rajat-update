@@ -1,0 +1,64 @@
+.signup-btn.nav-link a {
+    padding: 10px 20px;
+    background-color: green;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.signup-btn a:hover {
+    padding: 10px 20px;
+    background-color: #9b9491;
+    color: #ffffff;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-btn:hover {
+    /* padding: 10px 20px;  */
+    padding: 15px 5px;
+    background-color: #ff971c;
+    color: #ffffff;
+    border-radius: 0px 0px 5px 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-btn.active {
+    padding: 20px 5px;
+    background-color: #ff971c;
+    color: #ffffff;
+    border-radius: 0px 0px 5px 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Linkweb {
+    text-transform: capitalize;
+    text-decoration: none;
+    /* color: rgba(255, 230, 0, 0.876);
+    font-weight: bolder; */
+}
+
+.btn {
+    border: none;
+    /*
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer; 
+  
+}
+
+
+.active, .btn:hover {
+  background-color: #666;
+  /*color: white; */
+}
+
+
+.menu-btn-new{
+    color: aqua !important;
+}
