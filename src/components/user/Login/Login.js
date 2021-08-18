@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from 'axios';
 import "react-phone-input-2/lib/style.css";
 import App from "../../common";
 import GoogleLogin from "react-google-login";
@@ -60,10 +61,21 @@ const Login = (props) => {
     setValues({ ...values, buttonDisabled: true });
   }; */
 
-    const onClickNext = () => {
-        setValues({ ...values, redirect: true });
-        console.log(values.input);
+    const onClickNext = async () => {
         
+        console.log(values.input);
+        const data = {
+            user_account:values.input.email,
+            password:values.input.password
+        }
+        console.log(data);
+        try {
+            const resp = await axios.post('https://foody-web-backend.herokuapp.com/api/login',data);
+            console.log(resp)
+            setValues({ ...values, redirect: resp.data.success });
+        } catch (error) {
+            console.log(error.response.data);
+        }
         /*setValues({
             ...values,
             buttonDisabled: true,
