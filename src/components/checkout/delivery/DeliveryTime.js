@@ -31,7 +31,7 @@ const DeliveryTime = (props) => {
                         <div className="flex-fill">
                             <div className="d-inline">
                                 <h4 className="fw-bold text-warning ">
-                                    As Soon As Possible{" "}
+                                    ASAP{" "}
                                     <img
                                         alt={"check"}
                                         src={check}
