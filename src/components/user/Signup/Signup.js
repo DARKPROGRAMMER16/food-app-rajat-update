@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "react-phone-input-2/lib/style.css";
 import App from "../../common";
 import GoogleLogin from "react-google-login";
@@ -22,6 +23,9 @@ import { Redirect, Link } from "react-router-dom";
 import Helmet from "react-helmet";
 import "./Signup.css";
 import { Form } from "react-bootstrap";
+import {toast} from 'react-toastify';
+
+toast.configure();
 
 const Signup = (props) => {
     const dispatch = useDispatch();
@@ -48,20 +52,49 @@ const Signup = (props) => {
         }
     }, [user]);
 
+    const notify = () => {
+        toast("error user exist");
+    }
+
     if (values.dashboard) {
         return <Redirect to={"/" + values.dashboard + "/dashboard"} />;
     }
     if (values.redirect) {
         return <Redirect to={"/profile"} />;
     }
+    // if (!values.redirect) {
+    //     return <Redirect to={"/signup"} />;
+    // }
+    
 
     /* const onSendOtp = () => {
     dispatch(sendOtpToUser(values.input));
     setValues({ ...values, buttonDisabled: true });
   }; */
 
-    const onClickNext = () => {
-        setValues({ ...values, redirect: true });
+    const onClickNext = async () => {
+        
+        console.log(values.input);
+        const data = {
+            fname:values.input.first_name,
+            lname:values.input.last_name,
+            email:values.input.email,
+            phone: values.input.phoneNumber,
+            birthdate:values.input.dob,
+            country:values.input.country,
+            password: values.input.password
+        }
+        console.log(data);
+        try {
+            const responsi = await axios.post('https://foody-web-backend.herokuapp.com/api/register',data);
+            // const respose_d = responsi.json();
+            console.log(responsi);
+            setValues({ ...values, redirect: responsi.data.success});
+        } catch (error) {
+            console.log(error.response.data);
+            // setValues({ ...values, redirect: error.response.data.success});
+            // notify();
+        }
         /* setValues({
             ...values,
             buttonDisabled: true,

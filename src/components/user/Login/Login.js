@@ -62,6 +62,8 @@ const Login = (props) => {
 
     const onClickNext = () => {
         setValues({ ...values, redirect: true });
+        console.log(values.input);
+        
         /*setValues({
             ...values,
             buttonDisabled: true,
